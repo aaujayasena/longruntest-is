@@ -1,4 +1,4 @@
-# longruntest-is
+# longruntest-is -results
 
 This folder contains the wso2 identity server long run test resultsresults-day7.zip folder contains the test results with following configurations.
 
