@@ -31,7 +31,7 @@ Step 03:
   - Execute run-long-running-tests.sh file for test execution. 
   - Test configurations,
     - Concurrency: 2
-    - Constant TPS: 4 per minute
+    - Constant TPS: 4 #Constant throughput (per minute)
     - Test duration: 5 days
 
 Step 04:
