@@ -21,7 +21,7 @@ time=$(expr $timeInDays \* 24 \* 60 \* 60)
 concurrency=2
 host=3.235.175.44
 port=30443
-constantTPS=4 # per minute
+constantTPS=4 #Constant throughput (per minute)
 start_time=$(date +"%s")
 
 result_dir=/home/ubuntu/long-run
