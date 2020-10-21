@@ -2094,7 +2094,7 @@ spec:
             - "wso2is"
       containers:
       - name: wso2is
-        image: "$image.pull.@.aaujayasena"/wso2ispostgres:5.10.24
+        image: "$image.pull.@.aaujayasena"/wso2ispostgres:5.10.3
         livenessProbe:
           exec:
             command:
@@ -2117,7 +2117,7 @@ spec:
             memory: "256Mi"
             cpu: "1000m"
           limits:
-            memory: "764Mi"
+            memory: "1Gi"
             cpu: "1000m"
         lifecycle:
           preStop:
