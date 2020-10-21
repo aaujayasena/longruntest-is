@@ -9,7 +9,7 @@ Step 01:
  - configurations available
    - database configurations (default: postgres)
    - User store configurations (default: Unique id JDBC)
-   - IS Pod request and upper limit memory (default 256 Mb and 764mb respectively)
+   - IS Pod request and upper limit memory (default 256 Mb and 1GB respectively)
    - IS pod request and upper limit CPU cores (default: 1000 Mi)
    - Disbale Http server (toml configurations)
    - Tomcat thread count reduced (toml configurations)
