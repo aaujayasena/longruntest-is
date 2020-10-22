@@ -107,7 +107,19 @@ data:
     minSpareThreads = "2"
     maxKeepAliveRequests = "10"
     acceptCount = "40"
+    
+    [authentication.authenticator.x509_certificate.parameters]
+    AuthenticationEndpoint ="https://$ref{server.hostname}:9443/x509-certificate-servlet"
 
+    [oauth.token_cleanup]
+    enable = false
+    retain_access_tokens_for_auditing = false
+
+    [session_data.cleanup]
+    enable_expired_data_cleanup = false
+    clean_logged_out_sessions_at_immediate_cycle = false
+    enable_pre_session_data_cleanup = false
+   
 ---
 
 apiVersion: v1
@@ -2094,7 +2106,7 @@ spec:
             - "wso2is"
       containers:
       - name: wso2is
-        image: "$image.pull.@.aaujayasena"/wso2ispostgres:5.10.3
+        image: "$image.pull.@.aaujayasena"/wso2ispostgres:5.10.0.mini
         livenessProbe:
           exec:
             command:
